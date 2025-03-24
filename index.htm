@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nwimo Chioma Goodluck - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        header {
+            background: #1e1e1e;
+            color: #ff69b4;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #ff69b4;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        nav ul li a:hover {
+            color: #fff;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .project {
+            background: #222;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(255, 105, 180, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        .project img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .profile-pic {
+    width: 200px; /* Adjusted for better scaling */
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #ff69b4;
+    display: block;
+    margin: 20px auto; 
+    animation: bounce 2s infinite;
+}
+
+/* Ensure proper display on wider screens */
+@media (min-width: 1024px) {
+    .profile-pic {
+        width: 250px;
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+    }
+}
+
+        footer {
+            background: #1e1e1e;
+            color: #ff69b4;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .skill-box {
+        background: #222;
+        color: #fff;
+        padding: 15px 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(255, 105, 180, 0.3);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        animation: fadeInUp 1s ease-in-out;
+    }
+    .skill-box:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 6px 12px rgba(255, 105, 180, 0.5);
+    }
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NWIMO CHIOMA GOODLUCK</h1>
+        <p style="color: #fff;">Web Developer | Fullstack web-Developer</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="images/myprofile.jpg" alt="Chioma" class="profile-pic">
+    </header>
+    
+    <section id="about" class="container">
+        <h2 style="color: #ff69b4;">About Me</h2>
+        <p>Hi, I'm Nwimo Goodluck Chioma, a passionate full-stack web developer specializing in frontend and backend development, API integration, and database management. I build scalable, secure, and user-friendly web applications that make a difference.</p>
+    </section>
+    
+    <section id="projects" class="container">
+        <h2 style="color: #ff69b4;">Projects</h2>
+
+        <div class="project">
+            <img src="images/Screenshot (9).png" alt="E-commerce Platform">
+            <h3>E-commerce Platform (Anambramart)</h3>
+            <p>Developed a multi-purpose e-commerce platform called ANAMBRAMART  for marketplace, blog and free book section</p>
+        </div>
+        <div class="project">
+            <img src="images/vtu.png" alt="VTU Website">
+            <h3>VTU Website</h3>
+            <p>Built a VTU platform with Subvas API for seamless airtime and data transactions.</p>
+        </div>
+       
+        <div class="project">
+            <img src="images/realestate.png" alt="Hotel Management System">
+            <h3>Real Estate System</h3>
+            <p>Created a real estate management system using PHP & MySQL.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="container">
+        <h2 style="color: #ff69b4;">Skills & What I Can Do</h2>
+        <div class="skills-container">
+            <div class="skill-box">✅ Full-Stack Web Development (Frontend & Backend)</div>
+            <div class="skill-box">✅ HTML, CSS, JavaScript, PHP, MySQL</div>
+            <div class="skill-box">✅ API Integration & Development</div>
+            <div class="skill-box">✅ E-commerce Website Development</div>
+            <div class="skill-box">✅ VTU Website Development</div>
+            <div class="skill-box">✅ Database Management & Optimization</div>
+            <div class="skill-box">✅ UI/UX Design & Responsive Web Design</div>
+            <div class="skill-box">✅ Web Hosting & Deployment</div>
+            <div class="skill-box">✅ Graphic Design & Branding</div>
+            <div class="skill-box">✅ SEO Optimization</div>
+            <div class="skill-box">✅ WordPress Website Development</div>
+            <div class="skill-box">✅ Content Writing & Blogging</div>
+        </div>
+    </section>
+    
+    <section id="remote-work" class="container">
+        <h2 style="color: #ff69b4;">Remote Services I Offer</h2>
+        <div class="skills-container">
+            <div class="skill-box">💻 Virtual Assistant (Email Management, Scheduling, Data Entry)</div>
+            <div class="skill-box">🛒 E-commerce Management (Product Upload, Store Setup, Order Processing)</div>
+            <div class="skill-box">🎨 Graphic Design (Logos, Flyers, Social Media Graphics)</div>
+            <div class="skill-box">📝 Content Writing (Blogs, Articles, Website Copywriting)</div>
+            <div class="skill-box">📊 Social Media Management (Post Scheduling, Engagement, Growth Strategy)</div>
+            <div class="skill-box">🔧 Website Maintenance & Bug Fixing</div>
+            <div class="skill-box">📧 Email Marketing & Automation</div>
+        </div>
+    </section>
+    
+    
+    <section id="contact" class="container">
+        <h2 style="color: #ff69b4;">Contact Me</h2>
+        <p>Email: nwimochioma15@gmail.com</p>
+        <p>GitHub: <a href="https://github.com/goodluck-creat" style="color:#ff69b4;">github.com/Goodluck-creat</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/goodluck-chioma-66761630a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="color:#ff69b4;">linkedin.com/in/Goodluck Chioma</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Chioma Webcraft. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
